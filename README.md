@@ -22,3 +22,13 @@ In our day and age, millions of applications have been developed and are frequen
 
 ## Home Tab
 <img src="/Images/Home.png" alt="Home">
+
+## Phase 1 - GitHub Administration
+- While I'm in training, I have configured my GitHub repository.
+
+## Phase 2 - Project Setup
+- I have forked the existing GitHub repository.
+- The development branch has been created.
+
+## Phase 3 - Design Pattern Implementation
+- 
