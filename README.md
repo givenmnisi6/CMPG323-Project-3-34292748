@@ -33,3 +33,4 @@ In our day and age, millions of applications have been developed and are frequen
 ## Design Patterns
 Design patterns can help to accelerate the development process by offering tried-and-true development paradigms. Consider concerns that may not become apparent until later in the implementation process for effective software design. Reusing design patterns aids in the prevention of small faults that can lead to larger difficulties, as well as improving code readability for coders and architects who are familiar with the patterns.
 -  Repository classes have been created for Devices, Zones and Categories.
+<img src="/Images/Repository.png" alt="Repo">
