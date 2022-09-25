@@ -40,6 +40,19 @@ In our day and age, millions of applications have been developed and are frequen
 
 ## Phase 3 - Design Pattern Implementation
 ## Design Patterns
-Design patterns can help to accelerate the development process by offering tried-and-true development paradigms. Consider concerns that may not become apparent until later in the implementation process for effective software design. Reusing design patterns aids in the prevention of small faults that can lead to larger difficulties, as well as improving code readability for coders and architects who are familiar with the patterns.
+Repositories are classes or components that encapsulate the logic required to access data sources. 
+They centralize common data access functionality, providing better maintainability and decoupling the infrastructure or technology used to access databases from the domain model layer.An abstraction layer between the data access layer and the business logic layer of an application
+A more loosely coupled approach to data access. 
+Create the data access logic in a separate class, or set of classes, called a repository with the responsibility of persisting the application's business model.
 -  Repository classes have been created for Devices, Zones and Categories.
 <img src="/Images/Repository.png" alt="Repo">
+
+### Tier 2 Implementation
+- A layer (Repository) will be created in between the DbContext and the Controller protect the two from each other and cause less coupled implementation that is easier to maintain.
+- The code that will be in the controllers will be moved to the Repositories and it be making use of the DbContext and implementing the code. 
+- The Controllers will just call the methods from the Repositories.
+- All the repositories will inherit from the same interface (IGenericRepository) since they all have the same methods.
+- All the methods woll be moved to the IGenericRepository 
+- The interface will be used by all the entities to interact with the DbContext
+
+
