@@ -1,5 +1,4 @@
-# CMPG323-Project-3-34292748
-## Standards & Patterns
+Standards & Patterns
 
 ## Overview
 In our day and age, millions of applications have been developed and are frequently utilized. The capacity of a developer to read and understand code is more significant than their ability to produce code. An ASP.NET Core MVC Web Application is handed in that will need to be enhanced and improved. Architectural patterns must be understood as well as pay specific attention to implementing coding principles and design patterns.
@@ -23,11 +22,12 @@ In our day and age, millions of applications have been developed and are frequen
 <img src="/Images/Home.png" alt="Home">
 
 ## Phase 1 - GitHub Administration
-- While I'm in training, I have configured my GitHub repository.
+- While I'm in training, I have created & configured my GitHub repository.
 
 ## Phase 2 - Project Setup
 - I have forked the existing GitHub repository.
 - The development branch has been created.
+- Added a connection string to the appsettings.json file
 
 ## Phase 3 - Design Pattern Implementation
 ## Design Patterns
