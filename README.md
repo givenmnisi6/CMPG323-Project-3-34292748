@@ -13,13 +13,13 @@ In our day and age, millions of applications have been developed and are frequen
 - There you will find the Home, Zones, Categories, Devices, and Logout tab.
 - You can either add new items, edit and delete items.
 
-## Register Tab
+## Register 
 <img src="/Images/Register.png" alt="Regsiter">
 
-## Log in Tab
+## Log in 
 <img src="/Images/LogIn.png" alt="Log in">
 
-## Home Tab
+## Home After Loggin in
 <img src="/Images/Home.png" alt="Home">
 
 ### Credentials to use:
