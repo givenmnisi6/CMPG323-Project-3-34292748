@@ -67,4 +67,5 @@ Create the data access logic in a separate class, or set of classes, called a re
 ## Dependency Injection
 Dependency injection is a design pattern in which an object does not create it dependent classes, but asks for it.
 
+<img src="/Images/DependencyInjection.png" alt="Depedency">
 
