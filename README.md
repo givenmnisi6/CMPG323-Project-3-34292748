@@ -64,4 +64,7 @@ Create the data access logic in a separate class, or set of classes, called a re
 | ICategoriesRepository| Inherits the IGenericRepository interface.                                                                 |
 | CategoriesController | Instatiates the categoryRepository.                                                                        |
 
-  
+## Dependency Injection
+Dependency injection is a design pattern in which an object does not create it dependent classes, but asks for it.
+
+
