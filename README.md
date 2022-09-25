@@ -54,5 +54,5 @@ Create the data access logic in a separate class, or set of classes, called a re
 - All the repositories will inherit from the same interface (IGenericRepository) since they all have the same methods.
 - All the methods woll be moved to the IGenericRepository 
 - The interface will be used by all the entities to interact with the DbContext
-
+<img src="/Images/Interfaces.png" alt="Interfaces">
 
