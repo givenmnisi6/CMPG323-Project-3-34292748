@@ -56,3 +56,12 @@ Create the data access logic in a separate class, or set of classes, called a re
 - The interface will be used by all the entities to interact with the DbContext
 <img src="/Images/Interfaces.png" alt="Interfaces">
 
+| Repository           | Description |
+| -------------------- | ---------------------------------------------------------------------------------------------------------- |
+| GenericRepository    | Implements all methods.                                                                                    |
+| IGenericRepository   | Abstract the implementation, it inherits all the methods. Used by all entities to interact with DbContext. |
+| CategoriesRepository | Uses the DbConext and inherits the methods.                                                                |
+| ICategoriesRepository| Inherits the IGenericRepository interface.                                                                 |
+| CategoriesController | Instatiates the categoryRepository.                                                                        |
+
+  
