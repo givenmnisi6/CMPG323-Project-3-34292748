@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DeviceManagement_WebApp.Controllers
 {
-    [Authorize]
+    [Authorize] 
     public class CategoriesController : Controller
     {
         private readonly ConnectedOfficeContext _context;
