@@ -17,11 +17,15 @@ namespace DeviceManagement_WebApp.Controllers
     {
         private readonly ConnectedOfficeContext _context;
         private readonly IDevicesRepository _devicesRepository;
+        private readonly ICategoriesRepository _categoriesRepository;
+        private readonly IZonesRepository _zonesRepository;
 
-        public DevicesController(ConnectedOfficeContext context, IDevicesRepository devicesRepository)
+
+        public DevicesController(IDevicesRepository devicesRepository, ICategoriesRepository categoriesRepository, IZonesRepository zonesRepository)
         {
             _devicesRepository = devicesRepository;
-            _context = context;
+            _categoriesRepository = categoriesRepository;
+            _zonesRepository = zonesRepository;
         }
 
         // GET: Devices
@@ -50,8 +54,8 @@ namespace DeviceManagement_WebApp.Controllers
         // GET: Devices/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Category, "CategoryId", "CategoryName");
-            ViewData["ZoneId"] = new SelectList(_context.Zone, "ZoneId", "ZoneName");
+            ViewData["CategoryId"] = new SelectList(_categoriesRepository.GetAll(), "CategoryId", "CategoryName");
+            ViewData["ZoneId"] = new SelectList(_zonesRepository.GetAll(), "ZoneId", "ZoneName");
             return View();
         }
 
@@ -78,8 +82,8 @@ namespace DeviceManagement_WebApp.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_context.Category, "CategoryId", "CategoryName", device.CategoryId);
-            ViewData["ZoneId"] = new SelectList(_context.Zone, "ZoneId", "ZoneName", device.ZoneId);
+            ViewData["CategoryId"] = new SelectList(_categoriesRepository.GetAll(), "CategoryId", "CategoryName", device.CategoryId);
+            ViewData["ZoneId"] = new SelectList(_zonesRepository.GetAll(), "ZoneId", "ZoneName", device.ZoneId);
             return View(device);
         }
 

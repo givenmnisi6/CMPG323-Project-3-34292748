@@ -15,13 +15,11 @@ namespace DeviceManagement_WebApp.Controllers
     [Authorize] 
     public class CategoriesController : Controller
     {
-        private readonly ConnectedOfficeContext _context;
         private readonly ICategoriesRepository _categoriesRepository;
 
-        public CategoriesController(ConnectedOfficeContext context, ICategoriesRepository categoriesRepository)
+        public CategoriesController(ICategoriesRepository categoriesRepository)
         {
             _categoriesRepository = categoriesRepository;
-            _context = context;
         }
 
         //GET all Categories

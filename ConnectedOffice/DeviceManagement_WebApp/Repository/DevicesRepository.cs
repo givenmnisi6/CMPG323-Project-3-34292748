@@ -13,7 +13,7 @@ namespace DeviceManagement_WebApp.Repository
 
         public Device GetMostRecentDevice()
         {
-            return _context.Device.OrderByDescending(service => service.DateCreated).FirstOrDefault();
+            return _context.Device.OrderByDescending(device => device.DateCreated).FirstOrDefault();
         }
     }
 }

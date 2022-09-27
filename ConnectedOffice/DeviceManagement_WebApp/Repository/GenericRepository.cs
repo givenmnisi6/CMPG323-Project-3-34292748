@@ -20,14 +20,6 @@ namespace DeviceManagement_WebApp.Repository
             _context.Set<T>().Add(entity);
             _context.SaveChangesAsync();
         }
-        /*public void AddRange(IEnumerable<T> entities)
-        {
-            _context.Set<T>().AddRange(entities);
-        }
-        public IEnumerable<T> Find(Expression<Func<T, bool>> expression)
-        {
-            return _context.Set<T>().Where(expression);
-        }*/
         public IEnumerable<T> GetAll()
         {
             return _context.Set<T>().ToList();
@@ -41,12 +33,7 @@ namespace DeviceManagement_WebApp.Repository
             _context.Set<T>().Remove(entity);
             _context.SaveChangesAsync();
         }
-
-        /*public void RemoveRange(IEnumerable<T> entities)
-        {
-            _context.Set<T>().RemoveRange(entities);
-        }*/
-        
+ 
         public void Update(T entity)
         {
             _context.Update(entity);
