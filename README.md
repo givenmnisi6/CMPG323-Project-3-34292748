@@ -25,9 +25,9 @@ In our day and age, millions of applications have been developed and are frequen
 - Before the user can use any of the tabs the have to log in since each and every page is Authorized. You can log in with the following Credentials:
 
 | Credentials   | User            | Alternatively         |
-| :------------ |:---------------:| :--------------:|
-| Username      | john@gmail.com  | sue@gmail.com   |   
-| Password      |NrdgmeQAEj.Q6f.  | FV9PHyvin.n9ZBg |
+| :------------ |:---------------:| :--------------:      |
+| Username      | john@gmail.com  | sue@outlook.com       |   
+| Password      |NrdgmeQAEj.Q6f.  | FV9PHyvin.n9ZBg       |
 
 
 ## Phase 1 - GitHub Administration
