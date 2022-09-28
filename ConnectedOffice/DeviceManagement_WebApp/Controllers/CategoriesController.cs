@@ -12,16 +12,15 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DeviceManagement_WebApp.Controllers
 {
+    //Authorize so that the user can log in before accessing any of the items
     [Authorize] 
     public class CategoriesController : Controller
     {
-        private readonly ConnectedOfficeContext _context;
         private readonly ICategoriesRepository _categoriesRepository;
-
-        public CategoriesController(ConnectedOfficeContext context, ICategoriesRepository categoriesRepository)
+        //Instatiates the categoryRepository.
+        public CategoriesController(ICategoriesRepository categoriesRepository)
         {
             _categoriesRepository = categoriesRepository;
-            _context = context;
         }
 
         //GET all Categories
@@ -54,8 +53,6 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // POST: Categories/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CategoryId,CategoryName,CategoryDescription,DateCreated")] Category category)
@@ -82,8 +79,6 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // POST: Categories/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("CategoryId,CategoryName,CategoryDescription,DateCreated")] Category category)
@@ -136,7 +131,7 @@ namespace DeviceManagement_WebApp.Controllers
             _categoriesRepository.Remove(category);
             return RedirectToAction(nameof(Index));
         }
-
+        //Checks whether the Category Exists
         private bool CategoryExists(Guid id)
         {
             return _categoriesRepository.Exists(id);

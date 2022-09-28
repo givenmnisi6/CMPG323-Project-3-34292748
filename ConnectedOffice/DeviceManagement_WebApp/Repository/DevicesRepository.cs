@@ -7,13 +7,14 @@ namespace DeviceManagement_WebApp.Repository
 {
     public class DevicesRepository : GenericRepository<Device>, IDevicesRepository
     {
+        //Uses the DbContext and inherits the methods.
         public DevicesRepository (ConnectedOfficeContext context) : base(context)
         {
         }
 
         public Device GetMostRecentDevice()
         {
-            return _context.Device.OrderByDescending(service => service.DateCreated).FirstOrDefault();
+            return _context.Device.OrderByDescending(device => device.DateCreated).FirstOrDefault();
         }
     }
 }

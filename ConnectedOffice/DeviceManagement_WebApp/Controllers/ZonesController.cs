@@ -12,9 +12,11 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DeviceManagement_WebApp.Controllers
 {
+    //Authorize so that the user can log in before accessing any of the items
     [Authorize]
     public class ZonesController : Controller
     {
+        //Instatiates the categoryRepository.
         private readonly ConnectedOfficeContext _context;
         private readonly IZonesRepository _zonesRepository;
 
@@ -38,8 +40,7 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var zone = await _context.Zone
-                .FirstOrDefaultAsync(m => m.ZoneId == id);
+            var zone = _zonesRepository.GetById(id);
             if (zone == null)
             {
                 return NotFound();
@@ -55,16 +56,12 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // POST: Zones/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ZoneId,ZoneName,ZoneDescription,DateCreated")] Zone zone)
         {
             zone.ZoneId = Guid.NewGuid();
-            _context.Add(zone);
-            await _context.SaveChangesAsync();
-
+            _zonesRepository.Add(zone);
             return RedirectToAction(nameof(Index));
         }
 
@@ -76,7 +73,7 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var zone = await _context.Zone.FindAsync(id);
+            var zone = _zonesRepository.GetById(id);
             if (zone == null)
             {
                 return NotFound();
@@ -85,8 +82,6 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // POST: Zones/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("ZoneId,ZoneName,ZoneDescription,DateCreated")] Zone zone)
@@ -98,8 +93,7 @@ namespace DeviceManagement_WebApp.Controllers
 
             try
             {
-                _context.Update(zone);
-                await _context.SaveChangesAsync();
+                _zonesRepository.Update(zone);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -124,8 +118,7 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var zone = await _context.Zone
-                .FirstOrDefaultAsync(m => m.ZoneId == id);
+            var zone = _zonesRepository.GetById(id);
             if (zone == null)
             {
                 return NotFound();
@@ -139,15 +132,14 @@ namespace DeviceManagement_WebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var zone = await _context.Zone.FindAsync(id);
-            _context.Zone.Remove(zone);
-            await _context.SaveChangesAsync();
+            var zone = _zonesRepository.GetById(id);
+            _zonesRepository.Remove(zone);
             return RedirectToAction(nameof(Index));
         }
-
+        //Checks whether the Zone Exists
         private bool ZoneExists(Guid id)
         {
-            return _context.Zone.Any(e => e.ZoneId == id);
+            return _zonesRepository.Exists(id);
         }
     }
 }

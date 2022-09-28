@@ -6,6 +6,7 @@ namespace DeviceManagement_WebApp.Repository
 {
     public class CategoriesRepository : GenericRepository<Category>, ICategoriesRepository
     {
+        //Uses the DbContext and inherits the methods.
         public CategoriesRepository(ConnectedOfficeContext context) : base(context)
         {
         }
