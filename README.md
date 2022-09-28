@@ -4,7 +4,7 @@
 In our day and age, millions of applications have been developed and are frequently utilized. The capacity of a developer to read and understand code is more significant than their ability to produce code. An ASP.NET Core MVC Web Application is handed in that will need to be enhanced and improved. Architectural patterns must be understood as well as pay specific attention to implementing coding principles and design patterns.
 
 ## Manual
-- Stakeholders will be able to use the API from Azure or they can download the code from my GitHub repository and execute it from Visual Studio.
+- Stakeholders will be able to use the App service by clicking the following link : <a href="https://cmpg323-project-3-34292748.azurewebsites.net">App Service</a></li> alternatively they can download the code from my GitHub repository and execute it from Visual Studio.
 - When they execute it, it will lead them to their desired browser.
 - You will find the Home, Register, Login tabs.
 - Whereby they must register before utilizing it. 
@@ -68,6 +68,13 @@ Create the data access logic in a separate class, or set of classes, called a re
 Dependency injection is a design pattern in which an object does not create it dependent classes, but asks for it.
 
 <img src="/Images/DependencyInjection.png" alt="Depedency">
+
+## Phase 4 - Web API Cloud Hosting 
+- The App service has been created
+- The App has been published to the service hosted on Azure and ensure the App is secure and accessible.
+- Link: <a href="https://cmpg323-project-3-34292748.azurewebsites.net">App Service</a></li> 
+
+<img src="/Images/Publish.png" alt="Publish">
 
 ## Stretch Task
 Each and Every Controller has been Authenticated so that the user cannot use the Project without loggin in. They won't be able to add, delete or view anything unless they Log In.
