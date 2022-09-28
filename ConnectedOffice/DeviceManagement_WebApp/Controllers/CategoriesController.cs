@@ -52,7 +52,7 @@ namespace DeviceManagement_WebApp.Controllers
             return View();
         }
 
-        // POST: Categories/Create
+        // POST: Create Category
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CategoryId,CategoryName,CategoryDescription,DateCreated")] Category category)
