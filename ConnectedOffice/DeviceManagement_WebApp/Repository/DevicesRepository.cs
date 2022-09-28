@@ -7,6 +7,7 @@ namespace DeviceManagement_WebApp.Repository
 {
     public class DevicesRepository : GenericRepository<Device>, IDevicesRepository
     {
+        //Uses the DbContext and inherits the methods.
         public DevicesRepository (ConnectedOfficeContext context) : base(context)
         {
         }

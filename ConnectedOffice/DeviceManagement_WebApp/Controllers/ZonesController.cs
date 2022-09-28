@@ -12,9 +12,11 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DeviceManagement_WebApp.Controllers
 {
+    //Authorize so that the user can log in before accessing any of the items
     [Authorize]
     public class ZonesController : Controller
     {
+        //Instatiates the categoryRepository.
         private readonly ConnectedOfficeContext _context;
         private readonly IZonesRepository _zonesRepository;
 
@@ -134,7 +136,7 @@ namespace DeviceManagement_WebApp.Controllers
             _zonesRepository.Remove(zone);
             return RedirectToAction(nameof(Index));
         }
-
+        //Checks whether the Zone Exists
         private bool ZoneExists(Guid id)
         {
             return _zonesRepository.Exists(id);

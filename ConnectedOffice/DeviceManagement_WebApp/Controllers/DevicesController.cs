@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DeviceManagement_WebApp.Controllers
 {
+    //Authorize so that the user can log in before accessing any of the items
     [Authorize]
     public class DevicesController : Controller
     {
@@ -20,7 +21,8 @@ namespace DeviceManagement_WebApp.Controllers
         private readonly ICategoriesRepository _categoriesRepository;
         private readonly IZonesRepository _zonesRepository;
 
-
+        //Instatiates the devicesRepository, categoriesRepository, zonesRepository
+        //Since the Category & Zone is needed when adding a device, so they must be instatiated
         public DevicesController(IDevicesRepository devicesRepository, ICategoriesRepository categoriesRepository, IZonesRepository zonesRepository)
         {
             _devicesRepository = devicesRepository;
@@ -140,7 +142,7 @@ namespace DeviceManagement_WebApp.Controllers
             _devicesRepository.Remove(device);
             return RedirectToAction(nameof(Index));
         }
-
+        //Checks whether the Device Exists
         private bool DeviceExists(Guid id)
         {
             return _devicesRepository.Exists(id);

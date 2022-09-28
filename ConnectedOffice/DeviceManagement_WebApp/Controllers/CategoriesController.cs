@@ -12,11 +12,12 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DeviceManagement_WebApp.Controllers
 {
+    //Authorize so that the user can log in before accessing any of the items
     [Authorize] 
     public class CategoriesController : Controller
     {
         private readonly ICategoriesRepository _categoriesRepository;
-
+        //Instatiates the categoryRepository.
         public CategoriesController(ICategoriesRepository categoriesRepository)
         {
             _categoriesRepository = categoriesRepository;
@@ -130,7 +131,7 @@ namespace DeviceManagement_WebApp.Controllers
             _categoriesRepository.Remove(category);
             return RedirectToAction(nameof(Index));
         }
-
+        //Checks whether the Category Exists
         private bool CategoryExists(Guid id)
         {
             return _categoriesRepository.Exists(id);

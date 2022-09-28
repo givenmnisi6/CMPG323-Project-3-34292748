@@ -7,6 +7,8 @@ namespace DeviceManagement_WebApp.Repository
 {
     public interface IGenericRepository<T> where T : class
     {
+        //This interface Abstract the implementation,
+        //it inherits all the methods. Used by all entities to interact with DbContext.
         T GetById(Guid? id);
         IEnumerable<T> GetAll();
         void Add(T entity);
