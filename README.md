@@ -13,7 +13,7 @@ In our day and age, millions of applications have been developed and are frequen
 - You can either add new items, edit and delete items.
 
 ## Register 
-<img src="/Images/Register.png" alt="Regsiter">
+<img src="/Images/Register.png" alt="Register">
 
 ## Log in 
 <img src="/Images/LogIn.png" alt="Log in">
