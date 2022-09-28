@@ -69,6 +69,11 @@ Dependency injection is a design pattern in which an object does not create it d
 
 <img src="/Images/DependencyInjection.png" alt="Depedency">
 
+## Stretch Task
+Each and Every Controller has been Authenticated so that the user cannot use the Project without loggin in. They won't be able to add, delete or view anything unless they Log In.
+
+<img src="/Images/Stretch.png" alt="Stretch">
+
 # Reference List
 - Microsoft (2020). <i> ASP.NET MVC Overview</i>. https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/asp-net-mvc-overview 
 - Microsoft. <i> Secure a .NET web app with the ASP.NET Core Identity framework</i>. https://learn.microsoft.com/en-us/training/modules/secure-aspnet-core-identity/
@@ -82,4 +87,21 @@ Dependency injection is a design pattern in which an object does not create it d
 - M. Coetzee. 2022, 13 Sept. <i> Best practise and standards </i>.[Video]. <a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG323+-+Project+3+-+Best+practise+and+standards+13+Sept.m4v"> Best practise and standards </a></li>
 - M. Coetzee. 2022, 13 Sept. <i> WebApp demo </i>.[Video]. <a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG323+-+Project+3+-+WebApp+demo+13+Sept.m4v"> WebApp demo </a></li>
 - M. Coetzee & J. Muller. 2022, 20 Sept.<i> Project 3 repository Pattern concepts</i>. [Video] . <a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=09+CMPG323+-+Project+3+repository+pattern+concepts+20+Sept+recording.mp4"> Project 3 repository Pattern concepts </a></li>
-- <b>NOTE</b> For More References visit : <a href="https://github.com/givenmnisi6/CMPG323-Overview-34292748"> Overview Repository </a></li>
+- Deacon, J., 2009. Model-view-controller (mvc) architecture. <i>[Online][Citado em: 10 de março de 2006.] http://www. jdl. co. uk/briefings/MVC. pdf, 28.</i>
+- Cui, W., Huang, L., Liang, L. and Li, J., 2009, November. The research of PHP development framework based on MVC pattern. <i> In 2009 Fourth International Conference on Computer Sciences and Convergence Information Technology </i> (pp. 947-949). IEEE.
+- Freeman, A. and Sanderson, S., 2011. The MVC Pattern. <i> In Pro ASP. NET MVC 3 Framework </i> (pp. 63-88). Apress, Berkeley, CA.
+- Bucanek, J., 2009. Model-view-controller pattern. <i> Learn Objective-C for Java Developers, </i> pp.353-402.
+- Delessy-Gassant, N. and Fernandez, E.B., 2012, July. <i> The secure MVC pattern. In 1st LACCEI International Symposium on Software Architecture and Patterns </i>(pp. 1-6).
+- Lalanda, P., 1998, August. Shared repository pattern. <i> In Proc. 5th Annual Conference on the Pattern Languages of Programs </i>.
+- Prajapati, M., 2019. ASP. NET MVC-GENERIC REPOSITORY PATTERN AND UNIT OF WORK. <i> International Journal Of All Research Writings</i>, 1(1), pp.23-30.
+- Avgeriou, P. and Zdun, U., 2005. Architectural patterns revisited-a pattern language.
+- James, B. and Lalonde, L., 2015. Design Patterns. <i> In Pro XAML with C# </i> (pp. 37-55). Apress, Berkeley, CA.
+- Rossel, S., 2016. Object-Oriented Programming in C# Succinctly.
+- Pavlic, L., Hericko, M. and Podgorelec, V., 2008, June. <i> Improving design pattern adoption with ontology-based design pattern repository. In ITI 2008-30th International Conference on Information Technology Interfaces </i> (pp. 649-654). IEEE.
+- Caytiles, R.D. and Lee, S., 2014. <i> A Review of an MVC Framework based Software Development. International Journal of Software Engineering and Its Applications, </i> 8(10), pp.213-220.
+- Nodelman, V., 2004. <i> OOP via C++, C#...?. </i> ACM SIGCSE Bulletin, 36(3), pp.255-255.
+- Watson, K., Hammer, J.V., Reid, J.D., Skinner, M., Kemper, D. and Nagel, C., 2012. <i> Beginning visual C# 2012 programming </i> . John Wiley & Sons.
+- Seemann, M., 2012. <i> Dependency injection in. NET </i> (p. 584). New York: Manning.
+- Sobernig, S. and Zdun, U., 2010, July. <i> Inversion-of-control layer. In Proceedings of the 15th European Conference on Pattern Languages of Programs </i> (pp. 1-22).
+
+
