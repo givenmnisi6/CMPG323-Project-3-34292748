@@ -69,6 +69,13 @@ Dependency injection is a design pattern in which an object does not create it d
 
 <img src="/Images/DependencyInjection.png" alt="Depedency">
 
+## Phase 4 - Web API Cloud Hosting 
+- The App service has been created
+- The App has been published to the service hosted on Azure and ensure the App is secure and accessible.
+- Link: <a href="https://cmpg323-project-3-34292748.azurewebsites.net">App Service</a></li> 
+
+<img src="/Images/Publish.png" alt="Publish">
+
 ## Stretch Task
 Each and Every Controller has been Authenticated so that the user cannot use the Project without loggin in. They won't be able to add, delete or view anything unless they Log In.
 
