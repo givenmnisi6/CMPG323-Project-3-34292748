@@ -72,7 +72,7 @@ Dependency injection is a design pattern in which an object does not create it d
 # Reference List
 - Microsoft (2020). <i> ASP.NET MVC Overview</i>. https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/asp-net-mvc-overview 
 - Microsoft. <i> Secure a .NET web app with the ASP.NET Core Identity framework</i>. https://learn.microsoft.com/en-us/training/modules/secure-aspnet-core-identity/
-- Microsot. <i> Build web apps with ASP.NET Core for beginners. </i> https://learn.microsoft.com/en-us/training/paths/aspnet-core-web-app/
+- Microsoft. <i> Build web apps with ASP.NET Core for beginners. </i> https://learn.microsoft.com/en-us/training/paths/aspnet-core-web-app/
 - Kanchan Naik (2021, June 17). <i> Design Patterns In C# .NET . </i> https://www.c-sharpcorner.com/UploadFile/bd5be5/design-patterns-in-net/
 - Manikavelu Velayutham (2012, May 13). <i> Architectural Patterns in .NET. </i> https://www.c-sharpcorner.com/uploadfile/babu_2082/architectural-patterns-in-net/
 - Microsoft (2022). <i> Design the infrastructure persistence layer</i>. https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design
