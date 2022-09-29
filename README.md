@@ -36,7 +36,7 @@ In our day and age, millions of applications have been developed and are frequen
 ## Phase 2 - Project Setup
 - I have forked the existing GitHub repository.
 - The development branch has been created.
-- Added a connection string to the appsettings.json file
+- Added a connection string to the appsettings.json file.
 
 ## Phase 3 - Design Pattern Implementation
 ## Design Patterns
@@ -52,8 +52,8 @@ Create the data access logic in a separate class, or set of classes, called a re
 - The code that will be in the controllers will be moved to the Repositories and it be making use of the DbContext and implementing the code. 
 - The Controllers will just call the methods from the Repositories.
 - All the repositories will inherit from the same interface (IGenericRepository) since they all have the same methods.
-- All the methods woll be moved to the IGenericRepository 
-- The interface will be used by all the entities to interact with the DbContext
+- All the methods woll be moved to the IGenericRepository. 
+- The interface will be used by all the entities to interact with the DbContext.
 <img src="/Images/Interfaces.png" alt="Interfaces">
 
 | Repository           | Description |
@@ -70,7 +70,7 @@ Dependency injection is a design pattern in which an object does not create it d
 <img src="/Images/DependencyInjection.png" alt="Depedency">
 
 ## Phase 4 - Web API Cloud Hosting 
-- The App service has been created
+- The App service has been created.
 - The App has been published to the service hosted on Azure and ensure the App is secure and accessible.
 - Link: <a href="https://cmpg323-project-3-34292748.azurewebsites.net">App Service</a></li> 
 
