@@ -36,7 +36,7 @@ In our day and age, millions of applications have been developed and are frequen
 ## Phase 2 - Project Setup
 - I have forked the existing GitHub repository.
 - The development branch has been created.
-- Added a connection string to the appsettings.json file
+- Added a connection string to the appsettings.json file.
 
 ## Phase 3 - Design Pattern Implementation
 ## Design Patterns
