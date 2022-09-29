@@ -26,7 +26,7 @@ In our day and age, millions of applications have been developed and are frequen
 
 | Credentials   | User            | Alternatively         |
 | :------------ |:---------------:| :--------------:      |
-| Username      | john@gmail.com  | sue@outlook.com       |   
+| Email         | john@gmail.com  | sue@outlook.com       |   
 | Password      |NrdgmeQAEj.Q6f.  | FV9PHyvin.n9ZBg       |
 
 
